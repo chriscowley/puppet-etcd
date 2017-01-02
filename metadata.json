@@ -48,7 +48,11 @@
 	"dependencies": [{
 			"name": "puppetlabs/stdlib",
 			"version_requirement": ">= 4.6.0 < 5.0.0"
-		}
+		},
+                {
+                    "name": "justin8/systemd",
+                    "version_requirement": ">=0.4.0 < 999.999.9"
+                }
 	],
 	"tags": [ "etcd"
 	]
