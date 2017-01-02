@@ -4,6 +4,8 @@
 #
 class etcd::params {
   $ensure = 'present'
+  #  $package_url = 'https://github.com/coreos/etcd/releases/download/v3.0.15/etcd-v3.0.15-linux-amd64.tar.gz'
+  $package_url = undef
   $package_name = 'etcd'
   $manage_package = true
   $manage_service = true

@@ -8,6 +8,10 @@
 #   Passed to the docker package.
 #   Defaults to present
 #
+# [*package_url*]
+#   URL to download the etcd tar.gz file
+#   Undefined by default
+#
 # [*package_name*]
 #   Set the etcd package name.
 #   Defaults to etcd
@@ -225,6 +229,7 @@
 #
 class etcd (
   $ensure                      = $etcd::params::ensure,
+  $package_url                 = $etcd::params::package_url,
   $package_name                = $etcd::params::package_name,
   $manage_package              = $etcd::params::manage_package,
   $manage_service              = $etcd::params::manage_service,
